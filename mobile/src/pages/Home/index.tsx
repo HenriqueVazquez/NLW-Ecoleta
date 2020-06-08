@@ -91,8 +91,8 @@ const Home = () => {
 
           <RNPickerSelect
             placeholder={placeholderUF}
-            Icon={() => <Icon name="chevron-down" size={20} color="#6C6C80" />}   
-            style={{
+            Icon={() => <Icon name="chevron-down" size={20} color="#34CB79"  />}   
+            style={{              
               placeholder: {
                 fontFamily: 'Roboto_500Medium',
                 alignItems: 'center',
@@ -102,7 +102,7 @@ const Home = () => {
               viewContainer: {
                 height: 64,
                 backgroundColor: '#fff',
-                borderRadius: 10,
+                borderRadius: 10,                
                 marginBottom: 8,
                 paddingHorizontal: 24,
                 paddingTop: 8,
@@ -126,8 +126,9 @@ const Home = () => {
 
           <RNPickerSelect
             placeholder={placeholderCity}
-            Icon={() => <Icon name="chevron-down" size={20} color="#6C6C80" />}
+            Icon={() => <Icon name="chevron-down" size={20} color="#34CB79" />}
             style={{
+              
               placeholder: {
                 fontFamily: 'Roboto_500Medium',
                 alignItems: 'center',

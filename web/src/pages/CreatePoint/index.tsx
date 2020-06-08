@@ -11,6 +11,8 @@ import Dropzone from '../../components/Dropzone';
 import './styles.css';
 import logo from '../../assets/logo.svg';
 
+import Swal from 'sweetalert2';
+
 
 interface Item {
   id: number;
@@ -157,7 +159,12 @@ const CreatePoint = () => {
 
     await api.post('points', data);
 
-    alert('Ponto de coleta criado!');
+    Swal.fire({
+      title: 'Sucesso!',
+      text: 'Ponto de coleta cadastrado!',
+      icon: 'success',
+      confirmButtonText: 'Ok'
+    })
 
     history.push('/');
   }
